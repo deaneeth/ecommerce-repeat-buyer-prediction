@@ -240,15 +240,16 @@ All code in the roadmap uses `DATA_PATH` — set it once at the top and everythi
 5. Click **Create Cluster** (takes 1–3 min)
 6. Set up **Database Access:**
     - Go to Security > Database Access
-    - Add new user: username `admin`, password (note it down)
-    - Role: Atlas Admin
+    - Add new user: username `cosmetics_app`, password (note it down)
+    - Role: Read and write to any database **or**, preferably, a custom/limited role scoped only to the project database (for example `cosmetics_demo`)
+    - Do **not** use an `admin`/Atlas Admin user for the application connection
 7. Set up **Network Access:**
     - Go to Security > Network Access
-    - Click Add IP Address > **Allow Access from Anywhere** (0.0.0.0/0)
-    - This is fine for a coursework project
+    - Click Add IP Address and allowlist only the IP addresses that need access (for example, each team member's current public IP)
+    - Avoid **Allow Access from Anywhere** (`0.0.0.0/0`); if you must use it temporarily for initial setup, remove it immediately after connecting and replace it with specific IP entries
 8. Get **Connection String:**
     - Go to Clusters > Connect > Drivers
-    - Copy the connection string (looks like `mongodb+srv://admin:<password>@pusl3121-cosmetics.xxxxx.mongodb.net/`)
+    - Copy the connection string (looks like `mongodb+srv://cosmetics_app:<password>@pusl3121-cosmetics.xxxxx.mongodb.net/cosmetics_demo`)
 
 **Expected Output:**
 
