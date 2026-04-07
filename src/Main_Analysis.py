@@ -1396,17 +1396,17 @@ print(
 
 # MAGIC %md
 # MAGIC ## Section: RFM Feature Engineering (Oct–Dec Purchase Behaviour)
-#
-# **RFM (Recency, Frequency, Monetary)** is the gold standard in retail customer analytics.
-# These signals explain most variance in repeat purchase behaviour.
-#
-# | Group | Signals |
+# MAGIC
+# MAGIC **RFM (Recency, Frequency, Monetary)** is the gold standard in retail customer analytics.
+# MAGIC These signals explain most variance in repeat purchase behaviour.
+# MAGIC
+# MAGIC | Group | Signals |
 # MAGIC |---|---|
 # MAGIC | **Recency** | days_since_last_purchase, customer_tenure_days |
 # MAGIC | **Frequency** | purchase_count, purchase_days, purchase_frequency |
 # MAGIC | **Monetary** | total_spend, avg_purchase_value, max/min_purchase_value, spend_range |
 # MAGIC | **Breadth** | unique_products/brands/categories purchased |
-
+# MAGIC
 # COMMAND ----------
 
 rfm_ref = F.to_date(F.lit(RFM_REFERENCE_DATE))
