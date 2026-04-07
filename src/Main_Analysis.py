@@ -783,7 +783,7 @@ print(f"Average items per order: {basket_kpis['avg_items_per_order']}")
 # MAGIC ## 3. Data Visualization (Step 4)
 # MAGIC ### Create Visualizations
 # MAGIC This section creates five charts from aggregated real data in df_clean.
-#
+# MAGIC
 # MAGIC Implementation notes:
 # MAGIC - Only aggregated Spark outputs are converted to Pandas.
 # MAGIC - The full 20M+ row dataset is never converted to Pandas.
