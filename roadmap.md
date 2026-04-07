@@ -11,7 +11,7 @@
 
 | Component | Detail |
 | --- | --- |
-| Databricks | 14-Day Premium Free Trial (`dbc-1481bae3-1700.cloud.databricks.com`) |
+| Databricks | 14-Day Premium Free Trial (`dbc-<workspace>.cloud.databricks.com`) |
 | Compute | Databricks Serverless (no manual cluster management) |
 | IDE | VS Code + Databricks Extension + Databricks Connect 15.1.0 |
 | AI Agents | GitHub Copilot / Claude Code (local, synced to Databricks) |
