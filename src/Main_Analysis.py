@@ -1594,11 +1594,11 @@ print(f"Class weights — Positive: {w_pos}  |  Negative: {w_neg}")
 
 # MAGIC %md
 # MAGIC ## Section: Model Training
-#
-# Four models trained and compared:
-#
-# | Model | Role |
-# |---|---|
+# MAGIC
+# MAGIC Four models trained and compared:
+# MAGIC
+# MAGIC | Model | Role |
+# MAGIC |---|---|
 # MAGIC | Logistic Regression | Linear baseline — interpretable RFM coefficients |
 # MAGIC | Decision Tree | Visual decision rules — easy to explain to business |
 # MAGIC | Random Forest | Strong ensemble baseline |
