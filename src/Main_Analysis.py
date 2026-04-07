@@ -2024,10 +2024,10 @@ plt.show()
 
 # MAGIC %md
 # MAGIC ## Section: Precision-Recall Curves
-#
-# The PR curve shows how precision drops as recall increases.
-# GBT (red curve) stays above the 0.75 precision target line across a wide recall range —
-# meaning we can target 80%+ of returners while still achieving 80%+ precision.
+# MAGIC
+# MAGIC The PR curve shows how precision drops as recall increases.
+# MAGIC GBT (red curve) stays above the 0.75 precision target line across a wide recall range —
+# MAGIC meaning we can target 80%+ of returners while still achieving 80%+ precision.
 
 # COMMAND ----------
 
