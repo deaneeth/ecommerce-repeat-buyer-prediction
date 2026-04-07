@@ -165,7 +165,7 @@ for r in results:
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ### NoSQL Concepts Demonstrated
+# MAGIC ### NoSQL Concepts Demonstrated i
 # MAGIC - **Document model:** Each event is stored as a JSON-like MongoDB document.
 # MAGIC - **Flexible schema:** Optional fields like `brand` and `category_code` can be null without schema migration.
 # MAGIC - **Operational analytics:** Fast filtering and aggregation are shown with `find()` and `aggregate()`.
