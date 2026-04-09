@@ -1,4 +1,4 @@
-# PUSL3121 Big Data Analytics — Full Project Roadmap
+# E-Commerce Repeat Buyer Prediction — Full Analytics Pipeline
 
 **Project:** Industry-Based Big Data Analytics Using Apache Spark
 **Industry:** E-Commerce (Cosmetics Online Store)
@@ -236,7 +236,7 @@ All code in the roadmap uses `DATA_PATH` — set it once at the top and everythi
 4. Settings:
     - **Cloud Provider:** AWS (default is fine)
     - **Region:** Pick closest to your location
-    - **Cluster Name:** `PUSL3121-Cosmetics`
+    - **Cluster Name:** `EcommerceRepeatBuyer-Cosmetics`
 5. Click **Create Cluster** (takes 1–3 min)
 6. Set up **Database Access:**
     - Go to Security > Database Access
@@ -249,11 +249,11 @@ All code in the roadmap uses `DATA_PATH` — set it once at the top and everythi
     - Avoid **Allow Access from Anywhere** (`0.0.0.0/0`); if you must use it temporarily for initial setup, remove it immediately after connecting and replace it with specific IP entries
 8. Get **Connection String:**
     - Go to Clusters > Connect > Drivers
-    - Copy the connection string (looks like `mongodb+srv://cosmetics_app:<password>@pusl3121-cosmetics.xxxxx.mongodb.net/cosmetics_demo`)
+    - Copy the connection string (looks like `mongodb+srv://cosmetics_app:<password>@ecommerce-cosmetics.xxxxx.mongodb.net/cosmetics_demo`)
 
 **Expected Output:**
 
-- MongoDB Atlas dashboard shows cluster `PUSL3121-Cosmetics` in status "Active"
+- MongoDB Atlas dashboard shows cluster `EcommerceRepeatBuyer-Cosmetics` in status "Active"
 - You have a connection string ready
 - Database user credentials noted down
 
@@ -294,13 +294,12 @@ databricks-workspace/          ← your existing project root
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC # PUSL3121 - Big Data Analytics Coursework
-# MAGIC ## Industry-Based Big Data Analytics Using Apache Spark
-# MAGIC ### E-Commerce Cosmetics Shop — Customer Behavior Analysis
+# MAGIC # E-Commerce Repeat Buyer Prediction — Production Analytics Pipeline
+# MAGIC ## Real-Time Retention Intelligence Using Apache Spark
+# MAGIC ### Cosmetics Retail — Customer Behavior Analysis & Predictive Modeling
 # MAGIC **Dataset:** eCommerce Events History in Cosmetics Shop (Kaggle)
 # MAGIC **Industry:** E-Commerce / Retail
-# MAGIC **Group Members:** [Name1], [Name2], [Name3], [Name4]
-# MAGIC **Module:** PUSL3121 Big Data Analytics
+# MAGIC **Use Case:** Customer retention & targeted marketing optimization
 
 # COMMAND ----------
 
@@ -334,7 +333,8 @@ from pyspark.sql.types import *
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC # PUSL3121 - MongoDB/NoSQL Demonstration (Step 2)
+# MAGIC # Production NoSQL Integration — Event Data Storage (Step 2)
+# MAGIC ## Real-World MongoDB Atlas Implementation
 # MAGIC ## Storing E-Commerce Event Data in MongoDB Atlas
 
 # COMMAND ----------
@@ -648,7 +648,7 @@ WORKFLOW:
    from pymongo import MongoClient
 
    # Replace with your actual connection string
-   connection_string = "mongodb+srv://admin:<password>@pusl3121-cosmetics.xxxxx.mongodb.net/"
+   connection_string = "mongodb+srv://admin:<password>@ecommerce-cosmetics.xxxxx.mongodb.net/"
    client = MongoClient(connection_string)
 
    # Create database and collection
@@ -1864,7 +1864,7 @@ EXPECTED OUTCOME:
 REPORT STRUCTURE (~2500 words total)
 
 1. INTRODUCTION (~200 words) — Member 4
-   - Module context (Big Data Analytics, PUSL3121)
+   - Big Data Analytics pipeline architecture
    - Brief overview of the project
    - Business problem statement
    - Report structure overview
