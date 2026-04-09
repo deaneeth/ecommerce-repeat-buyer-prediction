@@ -240,26 +240,6 @@ While this pipeline successfully identifies high-value returners in batch, futur
 - **LinkedIn:** [Dineth Hettiarachchi](https://linkedin.com/in/deaneeth)
 - **Email:** [dnethusahan.h05@gmail.com](mailto:dnethusahan.h05@gmail.com)
 
-## 💖 Support
-
-If you find this project helpful:
-
-- ⭐ Star the repository
-- 🐛 Report issues on GitHub
-- 💡 Submit feature requests
-
-<p align="center">
-  <a href="https://www.buymeacoffee.com/deaneeeth1" target="_blank" rel="noreferrer">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="150" alt="Buy Me A Coffee badge for deaneeeth1" />
-  </a>
-</p>
-
-<div align="center">
-
-**Made with ❤️ by Dean**
-
-</div>
-
 ---
 
 <p align="center">
@@ -272,3 +252,4 @@ If you find this project helpful:
   <img alt="Built with Spark MLlib" src="https://img.shields.io/badge/Built%20with-Spark%20MLlib-orange" />
 </p>
 
+<p align="center"><strong>⭐ If this project helped you, a star would mean a lot.</strong></p>
