@@ -39,7 +39,7 @@ This was a group project where I led a team of 4 members across data engineering
 | 🧮 **Processing** | ![PySpark](https://img.shields.io/badge/PySpark-E25A1C?logo=apachespark&logoColor=white) | 3.5+ | Distributed ETL and analytics |
 | 🤖 **Machine Learning**| ![MLlib](https://img.shields.io/badge/Spark_MLlib-Classification-orange) | - | Binary classification models |
 | ☁️ **Compute** | ![Databricks](https://img.shields.io/badge/Databricks-Premium-FF3621?logo=databricks&logoColor=white) | Serverless | Managed pipeline execution |
-| 🌉 **Workspace Bridge**| ![Databricks Connect](https://img.shields.io/badge/Databricks_Connect-15.1.0-red) | 15.1.0 | Local VS Code integration |
+| 🌉 **Workspace Bridge**| ![Databricks Connect](https://img.shields.io/badge/Databricks_Connect-15.4.x-red) | 15.4.x | Local VS Code integration |
 | 🍃 **NoSQL Demo** | ![MongoDB](https://img.shields.io/badge/MongoDB_Atlas-47A248?logo=mongodb&logoColor=white) | 8.0 | Document storage sample |
 | 📈 **Visualization** | ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.x-blue) | 3.x | Charts and tabular formatting |
 
@@ -86,18 +86,18 @@ kaggle datasets download -d mkechinov/ecommerce-events-history-in-cosmetics-shop
 
 3. Upload files to dbfs:/Volumes/workspace/default/cosmetics_data/.
 4. Set MongoDB Atlas credentials in src/MongoDB_Demo.py.
-5. Install essentials:
+5. Install dependencies (for local Databricks Connect development):
 
 ```
-pip install pyspark pandas matplotlib "pymongo[srv]"
+pip install "databricks-connect>=15.4,<15.5" pandas matplotlib "pymongo[srv]"
 ```
 
-6. Run pipeline:
+6. Run pipeline in Databricks:
 
-```
-python src/MongoDB_Demo.py
-python src/Main_Analysis.py
-```
+> ⚠️ **Note:** `src/Main_Analysis.py` and `src/MongoDB_Demo.py` use Databricks-only APIs (`dbutils`, Volumes paths, and widgets) and **must** be executed inside a Databricks workspace — either by importing directly as a notebook, or by running locally via a properly configured [Databricks Connect](https://docs.databricks.com/dev-tools/databricks-connect/python/index.html) session. They cannot be run with a bare `python ...` command outside of Databricks.
+
+   - **Recommended:** Import `src/Main_Analysis.py` into your Databricks workspace and run it as a notebook on a Serverless or Standard cluster.
+   - **Alternative:** Configure Databricks Connect (`databricks configure`) and attach to a running cluster, then execute from VS Code or another IDE.
 
 ## 🗂️ Dataset Overview & Quality
 

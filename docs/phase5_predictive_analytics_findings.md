@@ -13,8 +13,7 @@
 | AUC-ROC | — | 0.9177 |
 | AUC-PR | — | 0.8901 |
 
-Notebook: `src/P5_RepeatBuyer_ML.py`
-This script is also fully integrated as Step 5 in `src/Main_Analysis.py`.
+Implementation: Step 5 in `src/Main_Analysis.py`.
 
 ---
 

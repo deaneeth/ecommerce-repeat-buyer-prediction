@@ -9,7 +9,6 @@ Context source files used:
 - src/Main_Analysis.py
 - docs/phase1_dataset_exploration_findings.md
 - docs/phase2_mongodb_nosql_findings.md
-- docs/phase3-parcial.md
 
 ---
 
