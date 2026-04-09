@@ -9,8 +9,9 @@
   <img alt="Status" src="https://img.shields.io/badge/Status-Complete-brightgreen" />
 </p>
 
+<p align="center">
 | 📦 20.7M Events | 🎯 AUC-ROC 0.9177 | 📈 1.96x Campaign Lift | 🧠 28 Features |
-|:--:|:--:|:--:|:--:|
+</p>
 
 ## 🔍 Overview
 
@@ -240,16 +241,22 @@ While this pipeline successfully identifies high-value returners in batch, futur
 - **LinkedIn:** [Dineth Hettiarachchi](https://linkedin.com/in/deaneeth)
 - **Email:** [dnethusahan.h05@gmail.com](mailto:dnethusahan.h05@gmail.com)
 
----
+## 💖 Support
+
+If you find this project helpful:
+
+- ⭐ Star the repository
+- 🐛 Report issues on GitHub
+- 💡 Submit feature requests
 
 <p align="center">
-  <strong>Built as a team-led big data project focused on measurable retention impact.</strong>
+  <a href="https://www.buymeacoffee.com/deaneeeth1" target="_blank" rel="noreferrer">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="120" alt="Buy Me A Coffee badge for deaneeeth1" />
+  </a>
 </p>
 
-<p align="center">
-  <img alt="License" src="https://img.shields.io/badge/License-MIT-lightgrey" />
-  <img alt="Open to Collaboration" src="https://img.shields.io/badge/Open%20to-Collaboration-0a7ea4" />
-  <img alt="Built with Spark MLlib" src="https://img.shields.io/badge/Built%20with-Spark%20MLlib-orange" />
-</p>
+<div align="center">
 
-<p align="center"><strong>⭐ If this project helped you, a star would mean a lot.</strong></p>
+**Made with ❤️ by [Dean](https://www.github.com/deaneeth)**
+
+</div>
