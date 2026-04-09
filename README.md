@@ -233,6 +233,16 @@ While this pipeline successfully identifies high-value returners in batch, futur
 
 > **Note:** The MongoDB demo is a standalone script to illustrate NoSQL integration and is not part of the main Spark pipeline.
 
+## ☕ Support
+
+<p align="center">
+  <a href="https://www.buymeacoffee.com/deaneeeth1" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-deaneeeth1-FFDD00?logo=buymeacoffee&logoColor=black" alt="Buy Me A Coffee badge" />
+  </a>
+</p>
+
+<p align="center"><strong>Made with love by Dean.</strong></p>
+
 ## 📧 Author / Contact
 
 - **Name:** Dineth Hettiarachchi
