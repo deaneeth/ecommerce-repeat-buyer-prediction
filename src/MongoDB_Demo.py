@@ -1,10 +1,29 @@
 # Databricks notebook source
+# =============================================================================
+# EcommerceRepeatBuyer_MongoDB_Integration.py
+# =============================================================================
+# Production integration: NoSQL storage using MongoDB Atlas for event data.
+#
+# Runtime: Databricks Serverless (Databricks Connect 15.1.0)
+# Demonstrates ingestion of 5,000-event purchase sample into MongoDB Atlas
+# with aggregation pipelines for document-model analytics & real-time queries.
+#
+# Prerequisites:
+#   1. pip install "pymongo[srv]" (handled via %pip in cell 2)
+#   2. Configure MONGO_CLUSTER_HOST and MONGO_PASSWORD widgets before running
+#
+# NOTE: Lines starting with "# MAGIC" are Databricks-specific directives.
+# "# MAGIC %md" renders markdown in the Databricks notebook UI.
+# "# MAGIC %pip" installs packages in the cluster environment.
+# "# COMMAND ----------" marks cell boundaries.
+# Import this .py file directly into Databricks to run as a notebook.
+# =============================================================================
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC # PUSL3121 - MongoDB/NoSQL Demonstration
-# MAGIC ## Storing E-Commerce Event Data in MongoDB Atlas
+# MAGIC # Production NoSQL Integration — Event Data Storage
+# MAGIC ## MongoDB Atlas for E-Commerce Event Analytics
 
 # COMMAND ----------
 
@@ -51,13 +70,19 @@ except NameError:
 
         spark = SparkSession.builder.getOrCreate()
 
-DATA_PATH = "/Volumes/workspace/default/cosmetics_data"
+# =============================================================================
+# CONFIGURATION — Update these for your Databricks workspace
+# =============================================================================
+DATA_PATH = "/Volumes/workspace/default/cosmetics_data"  # Update to your Volume path
 MONTH_FILE = "2019-Oct"
 TARGET_DOCS = 5000
+# =============================================================================
 
 dbutils.widgets.text("MONGO_USERNAME", "admin", "MongoDB Username")
 dbutils.widgets.text("MONGO_PASSWORD", "", "MongoDB Password")
-dbutils.widgets.text("MONGO_CLUSTER_HOST", "pusl3121-cosmetics.74d9hbu.mongodb.net", "MongoDB Cluster Host")
+# Replace with your own MongoDB Atlas cluster hostname
+# Format: your-cluster-name.xxxxx.mongodb.net
+dbutils.widgets.text("MONGO_CLUSTER_HOST", "your-cluster.mongodb.net", "MongoDB Cluster Host")
 
 mongo_username = dbutils.widgets.get("MONGO_USERNAME")
 mongo_password = dbutils.widgets.get("MONGO_PASSWORD")
@@ -82,7 +107,7 @@ print(f"Loaded {df.count()} rows from {MONTH_FILE}.csv for MongoDB demo")
 
 connection_string = (
     f"mongodb+srv://{quote_plus(mongo_username)}:{quote_plus(mongo_password)}"
-    f"@{mongo_cluster_host}/?appName=PUSL3121-Cosmetics"
+    f"@{mongo_cluster_host}/?appName=EcommerceRepeatBuyer-Analytics"
 )
 
 client = MongoClient(connection_string, serverSelectionTimeoutMS=15000)

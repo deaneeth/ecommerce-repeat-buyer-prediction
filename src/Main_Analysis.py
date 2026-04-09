@@ -1,14 +1,38 @@
 # Databricks notebook source
+# =============================================================================
+# EcommerceRepeatBuyer_Analytics.py
+# =============================================================================
+# Production-grade PySpark analytics pipeline for e-commerce repeat buyer prediction.
+#
+# Runtime: Databricks Serverless (Databricks Connect 15.1.0)
+# Dataset : REES46 E-Commerce Events History in Cosmetics Shop (Kaggle)
+#           5 CSV files · ~2.4 GB · 20,692,840 events · Oct 2019–Feb 2020
+#
+# Pipeline stages:
+#   1. Data ingestion & exploratory analysis
+#   2. Spark data transformation & quality assurance
+#   3. Data visualization (7 business dashboards)
+#   4. Predictive ML — 4 classifiers + RFM customer segmentation
+#   5. Big data architecture documentation
+#
+# Production model: GBT — Precision 0.7988 · F1 0.8155 · AUC-ROC 0.9177
+#
+# NOTE: Lines starting with "# MAGIC" are Databricks-specific directives.
+# "# MAGIC %md" renders markdown in the Databricks notebook UI.
+# "# MAGIC %pip" installs packages in the cluster environment.
+# "# COMMAND ----------" marks cell boundaries.
+# Import this .py file directly into Databricks to run as a notebook.
+# =============================================================================
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC # PUSL3121 - Big Data Analytics Coursework
-# MAGIC ## Industry-Based Big Data Analytics Using Apache Spark
-# MAGIC ### E-Commerce Cosmetics Shop — Customer Behavior Analysis
+# MAGIC # E-Commerce Repeat Buyer Prediction — Production Analytics Pipeline
+# MAGIC ## Real-Time Retention Intelligence Using Apache Spark
+# MAGIC ### Cosmetics Retail — Customer Behavior Analysis & Predictive Modeling
 # MAGIC **Dataset:** eCommerce Events History in Cosmetics Shop (Kaggle)
 # MAGIC **Industry:** E-Commerce / Retail
-# MAGIC **Module:** PUSL3121 Big Data Analytics
+# MAGIC **Use Case:** Customer retention & targeted marketing optimization
 
 # COMMAND ----------
 
@@ -35,7 +59,11 @@ except NameError:
 
     spark = SparkSession.builder.getOrCreate()
 
-DATA_PATH = "/Volumes/workspace/default/cosmetics_data"
+# =============================================================================
+# CONFIGURATION — Update these for your Databricks workspace
+# =============================================================================
+DATA_PATH = "/Volumes/workspace/default/cosmetics_data"  # Update to your Volume path
+# =============================================================================
 files = dbutils.fs.ls(DATA_PATH)
 display(files)
 
