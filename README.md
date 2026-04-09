@@ -250,7 +250,7 @@ If you find this project helpful:
 - 💡 Submit feature requests
 
 <p align="center">
-  <a href="https://www.buymeacoffee.com/deaneeeth1" target="_blank" rel="noreferrer">
+  <a href="https://www.buymeacoffee.com/deaneeth1" target="_blank" rel="noreferrer">
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="120" alt="Buy Me A Coffee badge for deaneeeth1" />
   </a>
 </p>
