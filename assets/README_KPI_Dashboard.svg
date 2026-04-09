@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="460" viewBox="0 0 1400 460" role="img" aria-label="Project KPI dashboard">
+    <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0f172a" />
+            <stop offset="100%" stop-color="#1e293b" />
+        </linearGradient>
+        <style>
+      .title { font: 700 34px 'Segoe UI', Arial, sans-serif; fill: #f8fafc; }
+      .sub { font: 500 16px 'Segoe UI', Arial, sans-serif; fill: #cbd5e1; }
+      .card { stroke: #334155; stroke-width: 1.5; }
+      .kpi { font: 800 34px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .label { font: 600 14px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+      .chip { font: 700 13px 'Segoe UI', Arial, sans-serif; fill: #f8fafc; }
+      .foot { font: 500 13px 'Segoe UI', Arial, sans-serif; fill: #cbd5e1; }
+        </style>
+    </defs>
+
+    <rect x="0" y="0" width="1400" height="460" fill="url(#g)" rx="22" ry="22" />
+
+    <text x="58" y="74" class="title">Repeat Buyer Prediction - Performance Dashboard</text>
+    <text x="58" y="102" class="sub">Apache Spark + PySpark + Databricks + MLlib on 20.7M e-commerce events</text>
+
+    <rect x="58" y="132" width="300" height="180" rx="16" ry="16" fill="#e2e8f0" class="card" />
+    <text x="80" y="175" class="kpi">20.7M</text>
+    <text x="80" y="204" class="label">Raw Events Processed</text>
+    <text x="80" y="230" class="label">20,692,840 -> 20,588,552 cleaned</text>
+
+    <rect x="382" y="132" width="300" height="180" rx="16" ry="16" fill="#dbeafe" class="card" />
+    <text x="404" y="175" class="kpi">0.9177</text>
+    <text x="404" y="204" class="label">GBT AUC-ROC</text>
+    <text x="404" y="230" class="label">Best model on leakage-safe split</text>
+
+    <rect x="706" y="132" width="300" height="180" rx="16" ry="16" fill="#dcfce7" class="card" />
+    <text x="728" y="175" class="kpi">2.01x</text>
+    <text x="728" y="204" class="label">Campaign Lift</text>
+    <text x="728" y="230" class="label">4,449 vs ~2,217 random returners</text>
+
+    <rect x="1030" y="132" width="310" height="180" rx="16" ry="16" fill="#fee2e2" class="card" />
+    <text x="1052" y="175" class="kpi">28 + 6</text>
+    <text x="1052" y="204" class="label">Features + RFM Segments</text>
+    <text x="1052" y="230" class="label">Precision@5% = 0.971</text>
+
+    <rect x="58" y="342" width="160" height="34" rx="10" ry="10" fill="#2563eb" />
+    <text x="138" y="364" text-anchor="middle" class="chip">Spark MLlib</text>
+
+    <rect x="232" y="342" width="180" height="34" rx="10" ry="10" fill="#059669" />
+    <text x="322" y="364" text-anchor="middle" class="chip">MongoDB Atlas</text>
+
+    <rect x="426" y="342" width="200" height="34" rx="10" ry="10" fill="#dc2626" />
+    <text x="526" y="364" text-anchor="middle" class="chip">Databricks Serverless</text>
+
+    <rect x="640" y="342" width="210" height="34" rx="10" ry="10" fill="#7c3aed" />
+    <text x="745" y="364" text-anchor="middle" class="chip">Temporal Validation</text>
+
+    <rect x="864" y="342" width="212" height="34" rx="10" ry="10" fill="#ea580c" />
+    <text x="970" y="364" text-anchor="middle" class="chip">No Leakage Split</text>
+
+    <text x="58" y="414" class="foot">Dataset: REES46 "eCommerce Events History in Cosmetics Shop" (Kaggle) | Date range: Oct 2019 - Feb 2020</text>
+</svg>

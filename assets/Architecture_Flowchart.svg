@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="560" viewBox="0 0 1800 560" role="img" aria-label="7-layer big data architecture flowchart">
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f8fafc" />
+            <stop offset="100%" stop-color="#eef2ff" />
+        </linearGradient>
+        <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155" />
+        </marker>
+        <style>
+      .title { font: 700 28px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 500 15px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+      .box-title { font: 700 16px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .box-text { font: 500 13px 'Segoe UI', Arial, sans-serif; fill: #1f2937; }
+      .gov-title { font: 700 16px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .gov-text { font: 500 13px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+      .line { stroke: #334155; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+      .dashed { stroke-dasharray: 8 6; }
+        </style>
+    </defs>
+
+    <rect x="0" y="0" width="1800" height="560" fill="url(#bg)" />
+
+    <text x="900" y="44" text-anchor="middle" class="title">7-Layer Big Data Architecture</text>
+    <text x="900" y="68" text-anchor="middle" class="subtitle">Repeat Buyer Prediction Pipeline - Spark, Databricks, MongoDB, MLlib</text>
+
+    <rect x="260" y="92" rx="14" ry="14" width="1280" height="78" fill="#f8fafc" stroke="#475569" stroke-width="2" />
+    <text x="900" y="121" text-anchor="middle" class="gov-title">Governance (Cross-Cutting)</text>
+    <text x="900" y="145" text-anchor="middle" class="gov-text">Data Quality | Access Control | Lineage | Model Monitoring</text>
+
+    <rect x="40" y="240" rx="14" ry="14" width="220" height="124" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2" />
+    <text x="150" y="270" text-anchor="middle" class="box-title">Data Sources</text>
+    <text x="150" y="296" text-anchor="middle" class="box-text">REES46 Kaggle CSVs</text>
+    <text x="150" y="316" text-anchor="middle" class="box-text">20.7M events</text>
+    <text x="150" y="336" text-anchor="middle" class="box-text">Web clickstream target</text>
+
+    <rect x="290" y="240" rx="14" ry="14" width="220" height="124" fill="#ffedd5" stroke="#c2410c" stroke-width="2" />
+    <text x="400" y="270" text-anchor="middle" class="box-title">Ingestion</text>
+    <text x="400" y="296" text-anchor="middle" class="box-text">Batch CSV loader</text>
+    <text x="400" y="316" text-anchor="middle" class="box-text">Kafka (target)</text>
+
+    <rect x="540" y="240" rx="14" ry="14" width="220" height="124" fill="#dcfce7" stroke="#047857" stroke-width="2" />
+    <text x="650" y="270" text-anchor="middle" class="box-title">Storage</text>
+    <text x="650" y="296" text-anchor="middle" class="box-text">Databricks Volumes</text>
+    <text x="650" y="316" text-anchor="middle" class="box-text">2.4 GB raw data</text>
+    <text x="650" y="336" text-anchor="middle" class="box-text">MongoDB Atlas (5K docs)</text>
+
+    <rect x="790" y="240" rx="14" ry="14" width="220" height="124" fill="#ede9fe" stroke="#6d28d9" stroke-width="2" />
+    <text x="900" y="270" text-anchor="middle" class="box-title">Spark Processing</text>
+    <text x="900" y="296" text-anchor="middle" class="box-text">Cleaning + validation</text>
+    <text x="900" y="316" text-anchor="middle" class="box-text">104K rows removed</text>
+    <text x="900" y="336" text-anchor="middle" class="box-text">8 analytics tasks</text>
+
+    <rect x="1040" y="240" rx="14" ry="14" width="220" height="124" fill="#fef3c7" stroke="#b45309" stroke-width="2" />
+    <text x="1150" y="270" text-anchor="middle" class="box-title">Machine Learning</text>
+    <text x="1150" y="296" text-anchor="middle" class="box-text">LR | DT | RF | GBT</text>
+    <text x="1150" y="316" text-anchor="middle" class="box-text">RFM segmentation</text>
+    <text x="1150" y="336" text-anchor="middle" class="box-text">28 engineered features</text>
+
+    <rect x="1290" y="240" rx="14" ry="14" width="220" height="124" fill="#e0f2fe" stroke="#0369a1" stroke-width="2" />
+    <text x="1400" y="270" text-anchor="middle" class="box-title">Analytics Output</text>
+    <text x="1400" y="296" text-anchor="middle" class="box-text">7 visualisations</text>
+    <text x="1400" y="316" text-anchor="middle" class="box-text">Notebook + report</text>
+
+    <rect x="1540" y="240" rx="14" ry="14" width="220" height="124" fill="#fee2e2" stroke="#b91c1c" stroke-width="2" />
+    <text x="1650" y="270" text-anchor="middle" class="box-title">Business Actions</text>
+    <text x="1650" y="296" text-anchor="middle" class="box-text">Retention campaigns</text>
+    <text x="1650" y="316" text-anchor="middle" class="box-text">2.01x campaign lift</text>
+
+    <line x1="260" y1="302" x2="290" y2="302" class="line" />
+    <line x1="510" y1="302" x2="540" y2="302" class="line" />
+    <line x1="760" y1="302" x2="790" y2="302" class="line" />
+    <line x1="1010" y1="302" x2="1040" y2="302" class="line" />
+    <line x1="1260" y1="302" x2="1290" y2="302" class="line" />
+    <line x1="1510" y1="302" x2="1540" y2="302" class="line" />
+
+    <line x1="650" y1="170" x2="650" y2="240" class="line dashed" />
+    <line x1="900" y1="170" x2="900" y2="240" class="line dashed" />
+    <line x1="1150" y1="170" x2="1150" y2="240" class="line dashed" />
+    <line x1="1400" y1="170" x2="1400" y2="240" class="line dashed" />
+
+    <text x="900" y="424" text-anchor="middle" class="subtitle">Raw: 20,692,840 events -> Cleaned: 20,588,552 rows -> Best model: GBT (AUC-ROC 0.9177)</text>
+</svg>
